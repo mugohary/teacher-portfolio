@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Moon and book mark">
+  <rect width="64" height="64" rx="14" fill="#041016"/>
+  <path d="M38 12a18 18 0 1 0 12 31 15 15 0 0 1-12-31Z" fill="#e6c275"/>
+  <path d="M14 44c6-2 10-2 16 0 6 2 10 2 16 0" fill="none" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 44V30" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/>
+</svg>

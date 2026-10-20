@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Design tokens — dark, serene, gold-on-night palette suited to
+   Arabic/Quran instruction. Tailwind v4 CSS-first theme.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-night-950: #041016;
+  --color-night-900: #071a22;
+  --color-night-800: #0c2733;
+  --color-night-700: #143848;
+
+  --color-sand-100: #f3ecdf;
+  --color-sand-300: #d7c7a6;
+
+  --color-gold-300: #f2d894;
+  --color-gold-400: #e6c275;
+  --color-gold-500: #d4a94e;
+
+  --color-teal-300: #7fd8cb;
+  --color-teal-400: #2dd4bf;
+
+  --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: 'Amiri', 'Noto Naskh Arabic', 'Times New Roman', serif;
+
+  --radius-2xl: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-night-950);
+  color: var(--color-sand-100);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Arabic body copy switches to the serif Arabic family automatically. */
+:lang(ar) {
+  font-family: var(--font-arabic);
+}
+:lang(ar) .font-display {
+  font-family: var(--font-arabic);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-gold-400) 40%, transparent);
+}
+
+/* Visible, consistent keyboard focus. */
+:focus-visible {
+  outline-offset: 2px;
+}

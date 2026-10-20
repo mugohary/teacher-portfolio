@@ -1,0 +1,34 @@
+{
+  "name": "arabic-quran-teacher-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Clean, modular, zero-bloat Arabic & Quran teacher portfolio and booking application.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules/.vite"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "keywords": [
+    "arabic",
+    "quran",
+    "tajweed",
+    "teacher",
+    "portfolio",
+    "booking",
+    "typescript",
+    "vite",
+    "tailwindcss"
+  ],
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}
